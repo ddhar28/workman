@@ -1,0 +1,74 @@
+.bookingForm {
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 5px;
+    background-color:cornsilk;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.formInput p  {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.booking-date {
+    width: 50%;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+select option {
+    background-color: #f0f0f0;
+}
+
+/* #view-booking {
+    width: 40%;
+    margin: 30px;
+    padding: 12px;
+    font-size: large;
+} */
+
+.bookingList {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#confirm-booking, #view-booking {
+    width: 40%;
+    margin: 50px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    font-size: large;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+#confirm-booking:hover, #view-booking:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}

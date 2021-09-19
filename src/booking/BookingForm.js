@@ -7,11 +7,24 @@ function BookingForm({toggleBooking, addEvent}) {
     const [equipment, setEquipment] = useState("")
     const [priority, setPriority] = useState("")
 
-    const confirmBooking = () => {
-        const event = { title: `${equipment} repair request`, date: '2021-09-30' }
-        addEvent(event)
+    const confirmBooking = async () => {
+        // const event = { title: `${equipment} repair request`, date: '2021-09-30' }
+
+        let res = await fetch('/create-order', {
+            method:'POST',
+            body:JSON.stringify({
+                facility_id: facility, 
+                equipment_type: equipment,
+                priority })
+        })
+
+        res = await res.json()
+
+        // addEvent(event)
         setIsComplete(true)
     }
+
+
 
     function getNewForm(confirmBooking) {
         return (

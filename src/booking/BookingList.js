@@ -4,7 +4,6 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import './booking.css';
 
 function BookingList({events}) {
-
     return (
         <div className='bookingList'>
             <FullCalendar
